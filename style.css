@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.765);
+    background-color: #000;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*::selection{
+    color: black;
+    background-color: white;
+}
+.cursor{
+    background-color: rgba(255, 255, 255, 0.928);
+    height: 1.8vw;
+    width: 1.8vw;
+    position: fixed;
+    z-index: 9;
+    border-radius: 1.1rem;
+    opacity: 0;
+    filter: blur(8px);
+}
+.nav{
+    /* background-color: aqua; */
+    height: 8vw;
+    width: 100vw;
+    padding: 1vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+    position: fixed;
+}
+.nav1{
+    height: 100%;
+    width: 15%;
+    /* background-color: burlywood; */
+}
+.nav .nav1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.nav .nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    gap: 3vw;
+}
+.nav .nav2 a{
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+    /* background-color: aqua; */
+    /* color: #000; */
+    position: relative;
+}
+.nav .nav2 a::after{
+    position: absolute;
+    content: "";
+    height: 1.5px;
+    background-color: #ff004f;
+    width: 0;
+    border-radius: 1px;
+    left: 0;
+    bottom: -5px;
+}
+.nav .nav2 a:hover::after{
+    width: 100%;
+    transition: all ease 0.4s;
+}
+#home{
+    /* background-color: aqua; */
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0 5vw;
+    position: relative;
+}
+#home .image-container{
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+#home .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#home .myinfo{
+    height: 35%;
+    width: 45%;
+    /* background-color: aqua; */
+    top:40%;
+    left: 6%;
+    position: absolute;
+}
+#home .myinfo h1{
+    position: absolute;
+    font-size: 4.4vw;
+}
+#home .myinfo h1 span{
+    color: #ff004f;
+}
+#home .myinfo p{
+    font-size: 1.5vw;
+}
+#about{
+    min-height: 70vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3vw 5vw;
+    position: relative;
+    gap: 3vw;
+}
+#about .about-image img{
+    height: 40vw;
+    width: 30vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.2rem;
+}
+#about .about-mydets {
+    /* background-color: red; */
+    flex-basis: 60%;
+    height: 10vw;
+    margin-top: 2vw;
+}
+#about .about-mydets p{
+    margin-top: 1vw;
+    font-size: 1.1rem;
+}
+#about .about-mydets .content-links{
+    /* background-color: aqua; */
+    margin: 1.1vw 0;
+}
+#about .about-mydets .content-links a{
+    text-decoration: none;
+    margin-right:3vw;
+    font-size: 1.2rem;
+    z-index: 9;
+    /* background-color: aqua; */
+    position: relative;
+}
+#about .about-mydets .content-links a::after{
+    background-color: #ff004f;
+    position: absolute;
+    content: "";
+    height: 1.5px;
+    width: 0;
+    bottom: -3px;
+    left: 0px;
+    border-radius: 1px;
+}
+#about .about-mydets .content-links a:hover::after{
+    width: 50%;
+    transition: all ease 0.4s;
+}
+#about .about-mydets .content span{
+    color: #ff004f;
+}
+
+
+

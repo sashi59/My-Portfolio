@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
 function cursorAnimation() {
     var crsr = document.querySelector(".cursor")
     var navi = document.querySelector(".main .nav")
@@ -29,13 +34,12 @@ function navAnimation() {
 navAnimation()
 
 function navItemsScrollAnimation(){ 
-var target = document.querySelectorAll(".main .nav .nav2 a")
 gsap.to(".nav .nav1 img",{
     y:15,
     opacity: 1,
     delay:0.2,
 })
-gsap.to(target, {
+gsap.to(".main .nav .nav2 a", {
     y:15,
     stagger:0.25,
     opacity:1,
@@ -48,7 +52,7 @@ gsap.to("#home .myinfo",{
     opacity: 1,
 })
 }
-navItemsScrollAnimation
+navItemsScrollAnimation()
 
 var content1 = document.querySelector(".about-mydets #content1")
 var content2 = document.querySelector(".about-mydets #content2")
@@ -59,8 +63,8 @@ var btn3 = document.querySelector(".content-links #btn3")
 
 function openTab1(){
     content1.style.transform = "translate(0)";
-    content2.style.transform = "translate(65vw)";
-    content3.style.transform = "translate(65vw)";
+    content2.style.transform = "translate(80vw)";
+    content3.style.transform = "translate(80vw)";
     btn1.style.color = "#ff004f"
     btn2.style.color = "#fff"
     btn3.style.color = "#fff"
@@ -68,9 +72,9 @@ function openTab1(){
 
 }
 function openTab2(){
-    content1.style.transform = "translate(65vw)";
+    content1.style.transform = "translate(80vw)";
     content2.style.transform = "translate(0)";
-    content3.style.transform = "translate(65vw)";
+    content3.style.transform = "translate(80vw)";
     btn1.style.color = "#fff"
     btn2.style.color = "#ff004f"
     btn3.style.color = "#fff"

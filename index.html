@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="portfolio_logo_bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css.css">
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,7 +16,7 @@
     <div class="main">
         <div class="nav">
             <div class="nav1">
-                <img src="images/logo.png" alt="" />
+                <img src="images/logo.png" alt="">
             </div>
             <div class="nav2">
                 <a href="#home">Home</a>
@@ -23,6 +25,7 @@
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </div>
+            
         </div>
         <div id="home">
             <div class="image-container">
@@ -35,7 +38,7 @@
         </div>
         <div id="about">
             <div class="about-image">
-                <img src="images/user.png" alt="" />
+                <img data-scroll data-scroll-speed="1" src="images/user.png" alt="" />
             </div>
             <div class="about-mydets">
                 <h1>About Me</h1>
@@ -102,11 +105,35 @@
 
             </div>
         </div>
+        <div id="services">
+            <h1>My Services</h1>
+            <div class="container">
+                <div class="block" class="block1">
+                    <i class="fa-solid fa-link"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe perferendis voluptatum a quidem ullam libero sapiente, perspiciatis quia dignissimos velit aliquam ipsa eos aspernatur cum at veritatis? Asperiores, dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="block"  class="block2">
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe perferendis voluptatum a quidem ullam libero sapiente, perspiciatis quia dignissimos velit aliquam ipsa eos aspernatur cum at veritatis? Asperiores, dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="block"  class="block3">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque saepe perferendis voluptatum a quidem ullam libero sapiente, perspiciatis quia dignissimos velit aliquam ipsa eos aspernatur cum at veritatis? Asperiores, dolorem.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    
 </body>
 
 </html>

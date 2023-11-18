@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: futura;
-    color: rgba(255, 255, 255, 0.765);
-    background-color: #000;
+   
 }
 html, body{
     height: 100%;
@@ -33,7 +32,7 @@ body::-webkit-scrollbar{
     filter: blur(8px);
 }
 .nav{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 8vw;
     width: 100vw;
     padding: 1vw 5vw;
@@ -42,11 +41,14 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     z-index: 9;
     position: fixed;
+    color: rgba(255, 255, 255, 0.765);
+    background-color: #000;  
 }
 .nav1{
     height: 100%;
     width: 15%;
     /* background-color: burlywood; */
+    position: relative;
 }
 .nav .nav1 img{
     height: 100%;
@@ -54,6 +56,7 @@ body::-webkit-scrollbar{
     object-fit: cover;
     object-position: center;
     opacity: 0;
+    position: absolute;
 }
 .nav .nav2{
     display: flex;
@@ -67,9 +70,10 @@ body::-webkit-scrollbar{
     font-size: 1.1rem;
     font-weight: 800;
     text-decoration: none;
-    /* background-color: aqua; */
-    /* color: #000; */
+    /* background-color: aqua;  */
     opacity: 0;
+    position: relative;
+    color: rgba(255, 255, 255, 0.765);
 }
 .nav .nav2 a::after{
     position: absolute;
@@ -91,6 +95,8 @@ body::-webkit-scrollbar{
     width: 100vw;
     padding: 0 5vw;
     position: relative;
+    color: rgba(255, 255, 255, 0.765);
+    background-color: #000;  
 }
 #home .image-container{
     height: 100%;
@@ -132,13 +138,22 @@ body::-webkit-scrollbar{
     padding: 3vw 5vw;
     position: relative;
     gap: 3vw;
+    color: rgba(255, 255, 255, 0.765);
+    background-color: #000;  
 }
 #about .about-image img{
-    height: 40vw;
-    width: 30vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 1.2rem;
+    scale: 1.4;
+}
+#about .about-image{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 37vw;
+    width: 27vw;
 }
 #about .about-mydets {
     /* background-color: red; */
@@ -162,7 +177,9 @@ body::-webkit-scrollbar{
     z-index: 9;
     /* background-color: aqua; */
     position: relative;
+    cursor: pointer;
 }
+
 #about .about-mydets .content-links a::after{
     background-color: #ff004f;
     position: absolute;
@@ -182,9 +199,56 @@ body::-webkit-scrollbar{
 }
 #about .about-mydets .content{
     position: absolute;
-    transform: translate(65vw);
-    transition: all ease 0.1s;
+    transform: translate(80vw);
+    transition: all ease 0.3s;
 }
-
+#services{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 1vw 5vw;
+    position: relative;
+    /* background-color: aqua; */
+    background-color: #000;
+}
+#services .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+#services h1{
+    color: #fff;
+    padding-bottom: 3vw;
+    font-size: 2.5vw;
+}
+#services .container .block{
+    /* background-color: rgb(24, 138, 238); */
+    flex-basis: 28vw;
+    padding: 2vw;
+    background: #252525 ;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.765);
+    transition: 0.4s ;
+    
+}
+#services .container .block i{
+    font-size: 2vw;
+    padding-bottom:0.5vw ;
+}
+#services .container .block h2{
+    font-size: 2rem;
+    padding-bottom: 0.4vw;
+}
+#services .container .block a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(105, 166, 240);
+    cursor: pointer;
+    margin-top: 10px;
+}
+#services .container .block:hover{
+    background-color: #ff004f;
+    transform: translateY(-3vw);
+}
 
 
